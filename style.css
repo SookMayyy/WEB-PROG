@@ -1,0 +1,474 @@
+header {
+	background-color: #475E4B;
+	position: sticky;
+	top: 0; /* Sticks the header at the top of the viewport */
+	z-index: 1000; /* Ensure the header stays on top of other elements */
+}
+
+/*Navigation Section Styling*/
+nav ul {
+	list-style-type: none;
+	padding: 0;
+	margin: 0;
+	display: flex;
+	align-items: center; /* Align items vertically in the center */
+	justify-content: space-between;
+	background-color: #475E4B;
+	height: 115px;
+}
+
+nav ul li {
+	display:inline; /*makes all the attributes display in horizontal way*/
+	margin-left: 10px;
+	margin-right: 10px;
+}
+
+nav ul li a { /*a means <a href....></a>*/
+	color: white;
+	text-decoration: none;
+	font-weight: bold;
+	font-size: 18px;
+	padding: 30px;
+}
+
+nav ul li a:hover {
+	color: #e580f4;
+}
+
+.logo img {
+	height: 106px;
+	width: auto;
+}
+
+.right-menu {
+	margin-left: auto; /* Pushes this ul to the right */
+}
+
+.right-menu li {
+	margin-left: 10px;
+	margin-right: 10px;
+}
+
+@keyframes slideIn {
+    0% {
+        opacity: 0;
+        transform: translateY(50px); /* Start from below */
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0); /* End at its normal position */
+    }
+}
+
+body {
+	font-family: 'Roboto', 'Familjen Grotesk';
+	margin: 0;
+	padding: 0;
+	overflow-x: hidden; /*Prevent horizontal scrolling*/
+	opacity: 0; /* Initially hidden */
+    animation: slideIn 1.0s ease-out forwards; /* Trigger animation */
+}
+
+/*Hero Section Styling*/
+#hero {
+	position: relative; /*To allow absolutely positioned elements inside*/
+	background-image: url('mainFood.png');
+	background-size: cover;
+	color: white;
+	padding: 50px;
+	text-align: center;
+	height: 650px;
+}
+
+/*Create a rectangle shade above the background*/
+#hero::before {
+	content: ""; /*Create a rectangle*/
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	background-color: black;
+	opacity: 0.3; /*transparency*/
+}
+
+#hero h1 {
+	position: relative;
+	font-size: 128px;
+	font-family: 'Familjen Grotesk';
+}
+
+.quote-mark {
+	color: #75E3EA; 
+}
+
+.order_now_container {
+	position: relative;
+	text-align: left;
+	margin-top: 20px;
+}
+
+.order_now_button {
+	background-color: #852221;
+	color: white;
+	padding: 12px 30px;
+	text-decoration: none;
+	font-size: 22px;
+	font-family: 'Roboto', sans-serif;
+	border-radius: 5px;
+	cursor: pointer;
+	font-weight: bold;
+	transition: all 0.5s ease;
+	border: none; /* Remove default button border */
+	border-radius: 30px;
+}
+
+.order_now_button:hover {
+	background-color: rgb(95, 95, 194);
+	color: white;
+	transform: scale(1.05);
+}
+
+/*Body Section Styling*/
+#body {
+	position: relative;
+	background-color: #EC9744;
+	background-size: cover;
+	color: black;
+	padding: 50px;
+	text-align: left;
+	height: 500px;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+
+.desc {
+	max-width: 800px; /*Create a max width 800px container on the left*/
+	text-align: left;
+}
+
+.desc p {
+	font-size: 40px;
+	font-weight: 1000;
+	line-height: 1.5;
+	padding-top: 10px;
+	padding-bottom: 10px;
+}
+
+.learn_more_button {
+	background-color: #65558f;
+	color: white;
+	padding: 10px 20px;
+	text-decoration: none;
+	font-size: 22px;
+	font-family: 'Roboto', sans-serif;
+	cursor: pointer;
+	font-weight: bold;
+	transition: all 0.5s ease;
+	border: none;
+	border-radius: 30px;
+	
+
+}
+
+.learn_more_button:hover {
+	background-color: rgb(95, 95, 194);
+	color: white;
+	transform: scale(1.05);
+}
+
+.food-image {
+	width: 729px;
+	height: auto;
+	border-radius: 30px;
+}
+
+/*Production Section Styling*/
+#product {
+	position: relative;
+	background-color: #FFE6E6;
+	padding-top: 20px;
+	color: black;
+	padding: 50px;
+	text-align: center;
+	height: 750px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+}
+
+#product h2 {
+	position: relative;
+	text-align: center;
+	font-size: 50px;
+	font-family: 'Roboto', sans-serif;
+	margin: 0;
+	width: 900px; /* Make sure it takes up full width */
+}
+
+.container {
+	position: relative;
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-wrap: wrap;
+	padding: 20px;
+	gap: 20px;
+	box-sizing: border-box;
+}
+
+.card {
+	position: relative;
+	max-width: 300px;
+	height: 300px;
+	background-color: #FFF;
+	margin: 30px 10px;
+	padding: 20px 15px;
+	display: flex;
+	border-radius: 30px;
+	flex-direction: column;
+	text-align: center;
+	box-shadow: 0 5px 202px rgba(0,0,0,0,5);
+	transition: 0.3s ease-in-out;
+	overflow: hidden;
+}
+
+.card:hover {
+	height: 420px;
+}
+
+.jam_image img{
+	max-width: 100%;
+	border-radius: 10px;
+}
+
+.content {
+	position: relative;
+	margin-top: 10px;
+	padding: 10px 15px;
+	text-align: center;
+	color: #111;
+	visibility: hidden;
+	opacity: 0;
+	transition: 0.3s ease-in-out;
+}
+
+.card:hover .content {
+	visibility: visible;
+	opacity: 1;
+}
+
+.content h3 {
+	font-size: 30px;
+	font-family: 'Roboto', sans-serif;
+	text-align: center;
+	margin: 0;
+	font-weight: bold;
+}
+
+.content p {
+	font-size: 15px;
+	font-family: 'Roboto', sans-serif;
+	text-align: left;
+	padding: 10px;
+}
+
+.container2 {
+	position: relative;
+	width: 100%;
+	display: flex;
+	justify-content: right;
+	align-items: center;
+	flex-wrap: wrap;
+	padding: 20px;
+	gap: 20px;
+	box-sizing: border-box;
+}
+
+.container2 p {
+	font-size: 30px;
+	font-family: 'Roboto', sans-serif;
+	font-weight: bold;
+	padding: 10px;
+}
+
+.container2 img {
+	width: 100px;
+	height: auto;
+}
+
+/*Community Impact Section Styling*/
+.community_impact {
+	position: relative;
+	background-color: #EC9744;
+	padding-top: 20px;
+	color: black;
+	padding: 40px;
+	text-align: center;
+	height: 800px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+}
+
+.community_impact h2 {
+	position: relative;
+	text-align: center;
+	padding: 80px;
+	font-size: 70px;
+	font-family: 'Roboto', sans-serif;
+	margin: 0;
+	width: 900px; /* Make sure it takes up full width */
+}
+
+.container-group {
+	display: flex;
+	padding: 50px;
+	gap: 90px;
+}
+
+.box {
+	width: 300px;
+	height: 400px;
+	border-radius: 16px;
+	overflow: hidden;
+	position: relative;
+	transition: 0.5s;
+	cursor: pointer;
+}
+
+.box img {
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+	pointer-events: none;
+	transition: 0.5s;
+}
+
+.box .layer {
+	background: linear-gradient(to top, rgba(0,0,0,1), rgba(0,0,0,0));
+	position: absolute;
+	bottom: 0;
+	width: 100%;
+	height: 75%;
+	opacity: 0;
+	transition: 0.3s;
+}
+
+.box .info{
+	position: absolute;
+	bottom: -50%;
+	padding: 40px;
+	opacity: 0;
+	transition: 0.5s bottom, 1.75s opacity;
+	color: white;
+}
+
+.info h3 {
+	font-size: 25px;
+	padding: 10px;
+}
+
+.info p {
+	font-size: 14px;
+	margin-top: 3px;
+}
+
+.box:hover, .box:hover img, .box:hover .layer {
+	transform: scale(1.1);
+}
+
+.box:hover > .layer {
+	opacity: 1;
+}
+
+.box:hover > .info {
+	bottom: 0;
+	opacity: 1;
+}
+
+.community_impact form{
+	margin-top: 30px;
+	margin-bottom: 60px;
+}
+
+/*Footer Section Styling*/
+.footer {
+	background-color: #475E4B;
+	color: white;
+	padding: 40px;
+	width: 100%;
+	box-sizing: border-box;
+}
+
+.footer_container {
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
+	width: 100%;
+}
+
+.contact_info, .refer {
+	width: 30%;
+	padding-left: 20px;
+	box-sizing: border-box;
+}
+
+.refer {
+	width: 23%;
+	padding-left: 110px;
+	padding-right: 50px;
+	margin: 0;
+	box-sizing: border-box;
+}
+
+.contact_info h3 {
+	margin-bottom: 15px;
+}
+
+.contact_info p {
+	flex-basis: 100%; /*Ensures each line takes up full width*/
+}
+
+.contact_info img {
+	width: 15px;
+	height: auto;
+	margin-right: 10px;
+}
+
+.span {
+	display: inline-block;
+	width: 18px;
+	padding-left: 10px;
+}
+
+.refer h4 {
+	font-size: 18px;
+	text-align: center;
+	margin-bottom: 30px;
+	margin-top: 15px;	
+}
+
+.refer ul {
+	list-style: none;
+	padding: 0;
+}
+
+.refer ul li {
+	margin-bottom: 30px;
+	text-align: center;
+}
+
+.refer ul li a {
+	color: white;
+	text-decoration: none;
+}
+
+.refer ul li a:hover {
+	text-decoration: underline;
+	color: #e580f4;
+}

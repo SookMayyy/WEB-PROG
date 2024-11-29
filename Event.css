@@ -1,0 +1,419 @@
+body {
+	background-color: #F2EDDD;
+}
+
+/* Event Hero Section */
+#event_hero {
+	position: relative; /*To allow absolutely positioned elements inside*/
+	background-image: url('event.png');
+	background-size: cover;
+	color: black;
+	padding: 50px;
+	text-align: center;
+	height: 650px;
+}
+
+/*Create a rectangle shade above the background*/
+#event_hero::before {
+	content: ""; /*Create a rectangle*/
+	position: absolute;
+	top: 165px;
+	left: 350px;
+	right: 350px;
+	bottom: 250px;
+	background-color: white;
+	opacity: 0.7; /*transparency*/
+}
+
+#event_hero h1 {
+	position: relative;
+	font-size: 100px;
+	font-family: 'Familjen Grotesk';
+	top: 120px;
+}
+
+
+/* Quote Section */
+.event_quote {
+	color: black;
+	padding: 10px;
+	height: auto;
+	text-align: center;
+	align-items: center;
+	font-size: 45px;
+	font-family:'Familjen Grotesk';
+}
+
+/* Past Event Banner */
+#past_event_banner {
+	background-color: #D7D6D2;
+	color: black;
+	padding-top: 5px;
+	padding-bottom: 100px;
+	width: 100%;
+	height: 100px;
+	text-align: center;
+	align-items: center;
+	font-size: 45px;
+}
+
+/* Past Event Content */
+.past_event {
+	position: relative;
+	background-color: #EC9744;
+	height: auto;
+	padding-top: 70px;
+	padding-bottom: 70px;
+}
+
+.campaign {
+	position: relative;
+	background-color: #FAC478;
+	width: 100%;
+	height: auto;
+	padding: 50px;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+
+.campaign img {
+	width: 600px;
+	height: 550px;
+	border-radius: 30px;
+	padding: 0 10px;
+}
+
+.campaign_content {
+    align-items: center; 
+    padding-right: 80px;
+    padding-left: 80px;
+    text-align: center;
+    padding-bottom: 50px;
+    margin-right: 20px;
+}
+
+.campaign_content h3 {
+    font-size: 40px;
+    color: black;
+    font-family: "Roboto"; 
+    padding-bottom: 10px;
+    padding-left: 20px;
+}
+
+.campaign_content p, .foodbank_content p, .cooking_content p {
+	font-size: 20px;
+	font-family: 'Roboto', sans-serif;
+	text-align: left;
+	padding-bottom: 20px;
+	letter-spacing: 0.7px;
+}
+
+/* Remove padding from the "Highlights" paragraph */
+.campaign_content p:last-of-type, .foodbank_content p:last-of-type, .cooking_content p:last-of-type {
+	padding-bottom: 10px; /* Removes bottom padding from the last paragraph (Highlights) */
+    margin-bottom: 0; /* Ensures no margin below this paragraph */
+}
+
+.campaign_content ul, .foodbank_content ul, .cooking_content ul {
+	padding-left: 20px;
+	margin-top: 0;
+}
+
+.campaign_content ul li, .foodbank_content ul li, .cooking_content ul li {
+	text-align: left;
+	font-size: 20px;
+	font-family: 'Roboto', sans-serif;
+	letter-spacing: 1px;
+}
+
+.learn_more {
+	position: relative;
+	width: 100%;
+	height: auto;
+	align-items: center;
+	text-align: center;
+	margin-bottom: 20px;
+}
+
+.learn_more h2 {
+	font-size: 50px;
+    color: black;
+    font-family: "Roboto"; 
+	margin-bottom: 20px;
+}
+
+.learn_more h4 {
+	font-size: 30px;
+	color: black;
+	font-family: "Roboto";
+	font-weight: 400;
+	margin-bottom: 10px;
+}
+
+.learn_more_container {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	flex-wrap: wrap;
+	padding-left: 80px;
+	padding-right: 80px;
+	gap: 40px;
+	box-sizing: border-box;
+}
+
+.learn_more_subcontainer {
+	position: relative;
+	display: inline-block;
+	max-width: 100%;
+	height: auto;
+	background-color: white;
+	margin: 60px 30px;
+	padding: 20px 15px;
+	text-align: center;
+	box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+	transition: transform 0.3s ease, box-shadow 0.3s ease;
+	overflow: hidden;
+	flex-direction: column;
+}
+
+.learn_more_subcontainer:hover {
+    transform: scale(1.05); /* Slight zoom effect on hover */
+    box-shadow: 0 6px 12px rgba(0,0,0,0.3); /* Slightly more pronounced shadow on hover */
+}
+
+.learn_more_container a {
+	text-decoration: none;
+	color: inherit;
+}
+
+.learn_more_subcontainer img {
+	width: 500px;
+	height: 300px;
+	object-fit: cover;
+}
+
+.learn_more_subcontainer p {
+	font-size: 16px;
+	font-family: 'Roboto';
+	margin-top: 10px;
+	margin-bottom: 0;
+	font-weight: 700;
+}
+
+/* Upcoming Event Banner */
+#upcoming_event_banner {
+	background-color: #D7D6D2;
+	color: black;
+	margin-top: 200px;
+	padding-top: 5px;
+	padding-bottom: 100px;
+	width: 100%;
+	height: 100px;
+	text-align: center;
+	align-items: center;
+	font-size: 45px;
+}
+
+/* Upcoming Event Content */
+.upcoming_event {
+	position: relative;
+	height: auto;
+	margin: 0;
+	margin-bottom: 30px;
+}
+
+.food_bank, .cooking_class {
+	position: relative;
+	background-image: url('food_bank.png');
+	background-size: cover;
+	color: black;
+	text-align: center;
+	height: auto;
+	margin: 0;
+	padding: 0;
+}
+
+.food_bank::before, .cooking_class::before {
+	content: ""; /*Create a rectangle*/
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	background-color: white;
+	opacity: 0.6; /*transparency*/
+}
+
+.food_bank h2 {
+	position: relative;
+	margin: 0;
+	text-align: left;
+	font-size: 50px;
+	letter-spacing: 0.5px;
+	line-height: 80px;
+	padding: 30px;
+	padding-left: 60px;
+	padding-top: 70px;
+	padding-bottom: 5px; 
+	font-family: 'Roboto';
+	justify-content: space-between;
+}
+
+.foodbank, .cooking {
+	position: relative;
+	width: 100%;
+	height: auto;
+	padding: 50px;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+
+.foodbank_content {
+	position: relative;
+	background-color: rgba(250, 196, 120, 0.8);
+	width: 600px;
+	height: auto;
+	align-items: center; 
+    text-align: left;
+    padding: 20px 30px;
+    margin-left: 0;
+    border-radius: 30px;
+}
+
+.foodbank img, .cooking img {
+	width: 500px;
+	height: 550px;
+	border-radius: 30px;
+	margin-right: 150px;
+}
+
+.cooking img {
+	object-fit: cover;
+	margin-right: 20px;
+	margin-left: 30px;
+}
+
+/* Grid container for the layout */
+.grid-container {
+    display: grid;
+    grid-template-columns: 640px 1fr; /* two columns */
+    grid-template-rows: 404px 269px;  /* tow rows */
+	width: 100%;
+    margin: 0 auto;
+}
+
+/* First row: Heart image and volunteering quote */
+.heart-image, .ilovechef-image {
+    width: 640px;
+    height: 404px;
+    object-fit: cover;
+}
+
+.quote-box, .quote-box2 {
+    background-color: #f4a261;
+    padding: 20px;
+    display: flex;
+    margin: 0;
+    align-items: center;
+    justify-content: center;
+    height: 364px;
+}
+
+.quote, .quote2 {
+    font-family: 'Roboto', sans-serif;
+    font-size: 50px;
+    color: white;
+    text-align: center;
+    font-weight: bold;
+    line-height: 1.4;
+}
+
+/* Second row: Big quote and hands image */
+.big-quote-box, .big-quote-box2 {
+    background-color: #f4a261;
+    padding: 20px;
+    display: flex;
+    margin: 0;
+    align-items: center;
+    justify-content: center;
+    height: 269px;
+}
+
+.big-quote, .big-quote2 {
+    font-family: 'Roboto', sans-serif;
+    font-size: 50px;
+    color: white;
+    text-align: center;
+    font-weight: bold;
+    line-height: 1.4;
+}
+
+.hands-image {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+/* Cooking Class Section */
+.cooking_class {
+	margin-top: 300px;
+	background-image: url("cooking_class.png");
+}
+
+.cooking_class h2 {
+	position: relative;
+	margin: 0;
+	text-align: right;
+	font-size: 50px;
+	letter-spacing: 0.5px;
+	line-height: 80px;
+	padding: 30px;
+	padding-left: 60px;
+	padding-top: 70px;
+	padding-bottom: 5px; 
+	font-family: 'Roboto';
+	justify-content: space-between;
+}
+
+.cooking_content {
+	position: relative;
+	background-color: #EC9744;
+	color: white;
+	width: 600px;
+	height: auto;;
+	align-items: center; 
+    text-align: left;
+    padding: 20px 30px;
+    margin-right: 150px;
+    border-radius: 30px;
+    font-size: 20px;
+}
+
+.grid-container2 {
+    display: grid;
+    grid-template-columns: 1fr 640px; /* two columns */
+    grid-template-rows: 404px 269px;  /* tow rows */
+	width: 100%;
+    margin: 0 auto;
+}
+
+.cake-image {
+	width: 777px;
+    height: 309px;
+}
+
+.quote-box2, .big-quote-box2 {
+	background-color: #F4CA88;
+}
+
+.quote2 {
+	color: black;
+	margin-right: 25px;
+}
+
+.big-quote2 {
+	color: black;
+	margin-left: 30px;
+}
