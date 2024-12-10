@@ -70,11 +70,28 @@
         /* PAYMENTS TABLE */
         
         // Retrieve payment method from form submission
-        $payment_method = htmlspecialchars($_POST['payment_method']);
+        $payment_method_input = htmlspecialchars($_POST['payment_method']);
+        
+        $payment_method = '';
+        
+        if ($payment_method_input == 'Debit card') {
+            $payment_method = 'debit card';
+        } else if ($payment_method_input == 'E-Wallet') {
+            $payment_method = 'e-wallet';
+        } else if ($payment_method_input == 'Cash on Delivery') {
+            $payment_method = 'cash';
+        } else if ($payment_method_input == 'Credit card') {
+            $payment_method = 'credit card';
+        } else if ($payment_method_input == 'Online Banking') {
+            $payment_method = 'online banking';
+        } else {
+            echo "Invalid payment method!";
+            exit();
+        }
         
         // Insert payment information into the 'payments' table
         $query3 = "INSERT INTO payments (order_id, payment_method, payment_date)
-                   VALUES ('$order_id', '$menu_id', NOW())"; 
+                   VALUES ('$order_id', '$payment_method', NOW())"; 
         mysqli_query($connectDB, $query3);        
        
              
