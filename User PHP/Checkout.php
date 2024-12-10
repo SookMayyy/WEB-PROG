@@ -122,12 +122,5 @@
     <footer>
     	<?php include('footer.php'); ?>
     </footer>
-    
-    <script>
-    function openForm(){
-    	document.getElementById("reward_obtain").style.display = "block";
-    }
-    </script>
-
 </body>
 </html>
