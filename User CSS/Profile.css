@@ -1,0 +1,116 @@
+header {
+    width: 100%;
+}
+
+body {
+	background-image: url('../images/Profile/profile_background.png');
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+	align-items: center;
+	justify-content: center;
+	display: flex;
+	flex-direction: column;
+	margin: 0;
+	padding: 0;
+	animation: slideIn 0s ease-out forwards;
+}
+
+.profile {
+	align-items: center;
+	margin-bottom: 30px;
+}
+
+.profile h1 {
+	font-family: "Familjen Grotesk", sans-serif;
+	font-size: 70px;
+	text-align: center;
+}
+
+.profile_content {
+	background-color: white;
+	align-items: center;
+	justify-content: center;
+	padding: 10px 30px;
+	padding-bottom: 30px;
+	border-radius: 10px;
+	width: 600px;
+	height: auto;
+	margin: 30px;
+	font-family: 'Familjen Grotesk', sans-serif; 
+}
+
+.profile_content h3 {
+	color: #9A9A9A;
+	font-size: 20px;
+	font-family: "Roboto";
+	font-weight: 400;
+	padding-top: 10px;
+}
+
+.profile_content p {
+	font-size: 18px;
+	font-family: "Roboto";
+	padding-bottom: 10px;
+}
+
+.profile_content .grey {
+	color: #9A9A9A
+}
+
+.profile_content .actions {
+	display: flex;
+	justify-content: space-between;
+	width: 100%;
+	margin-top: 20px;
+}
+
+.profile_content .edit {
+	background-color: #65558f;
+	color: white;
+	padding: 10px 20px;
+	font-size: 16px;
+	font-family: 'Roboto', sans-serif;
+	cursor: pointer;
+	transition: all 0.5s ease;
+	border: none;
+	border-radius: 30px;
+}
+
+.profile_content .edit:hover {
+	background-color: rgb(95, 95, 194);
+	color: white;
+	transform: scale(1.05);
+}
+
+.profile_content .delete {
+	background-color: #bf0603;
+	color: white;
+	padding: 10px 20px;
+	font-size: 16px;
+	font-family: 'Roboto', sans-serif;
+	cursor: pointer;
+	transition: all 0.5s ease;
+	border: none;
+	border-radius: 30px;
+	margin-right: 120px;
+}
+
+.profile_content .delete:hover {
+	background-color: #d00000;
+	color: white;
+	transform: scale(1.05);
+}
+
+
+.profile_content .order_history {
+	text-decoration: none;
+	color: #65558F;
+	font-size: 18px;
+	font-weight: 550;
+	padding-top: 7px;
+}
+
+.profile_content .order_history:hover {
+	text-decoration: underline;
+}

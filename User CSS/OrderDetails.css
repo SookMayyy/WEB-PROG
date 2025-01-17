@@ -1,0 +1,87 @@
+header {
+    width: 100%;
+}
+
+body {
+	background-image: url('../images/Profile/profile_background.png');
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+	align-items: center;
+	justify-content: center;
+	display: flex;
+	flex-direction: column;
+	margin: 0;
+	padding: 0;
+	animation: slideIn 0s ease-out forwards;
+}
+
+.orderDetails {
+	align-items: center;
+	margin-bottom: 30px;
+}
+
+.orderDetails h1 {
+	font-family: "Familjen Grotesk", sans-serif;
+	font-size: 70px;
+	text-align: center;
+}
+
+.orderDetails_content {
+	background-color: white;
+	align-items: center;
+	justify-content: center;
+	padding: 10px 40px;
+	padding-bottom: 30px;
+	border-radius: 10px;
+	width: 800px;
+	height: auto;
+	margin: 30px;
+	font-family: 'Familjen Grotesk', sans-serif; 
+}
+
+.orderDetails_content h3 {
+	color: black;
+	font-size: 20px;
+	font-family: "Roboto";
+	font-weight: 400;
+	margin: 20px 0;
+}
+
+.orderDetails_content table {
+	width: 100%;
+	border-collapse: collapse;
+	border-spacing: 15px 10px;
+}
+
+.orderDetails_content th {
+	background-color: #C8C8C8;
+}
+
+.orderDetails_content th, td {
+	padding: 20px;
+	text-align: center;
+	border: 1.5px solid black;
+	vertical-align: middle;
+	font-size: 18px;
+	font-family: "Roboto";
+}
+
+.orderDetails_content .actions {
+	display: flex;
+	justify-content: space-between;
+	width: 100%;
+	margin-top: 20px;
+}
+
+.orderDetails_content .profile, .orderDetails_content .order_history {
+	text-decoration: none;
+	color: #65558F;
+	font-size: 18px;
+	font-weight: 550;
+	padding-top: 7px;
+}
+
+.orderDetails_content .profile:hover, .orderDetails_content .order_history:hover {
+	text-decoration: underline;
+}

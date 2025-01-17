@@ -1,0 +1,195 @@
+header {
+    width: 100%;
+}
+
+body {
+	background-image: url('../images/Profile/profile_background.png');
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+	align-items: center;
+	justify-content: center;
+	display: flex;
+	flex-direction: column;
+	margin: 0;
+	padding: 0;
+	animation: slideIn 0s ease-out forwards;
+}
+
+.edit {
+	align-items: center;
+	margin-bottom: 30px;
+}
+
+.edit h1 {
+	font-family: "Familjen Grotesk", sans-serif;
+	font-size: 70px;
+	text-align: center;
+}
+
+.edit_content {
+	background-color: white;
+	align-items: center;
+	justify-content: center;
+	padding: 10px 30px;
+	padding-bottom: 20px;
+	border-radius: 10px;
+	width: 600px;
+	height: auto;
+	margin: 30px;
+	font-family: 'Familjen Grotesk', sans-serif; 
+}
+
+.edit_content h3 {
+	color: #9A9A9A;
+	font-size: 20px;
+	font-family: "Roboto";
+	font-weight: 400;
+	padding-top: 10px;
+}
+
+.edit_container {
+	display: flex;
+	align-items: center;
+	justify-content: flex-start;
+	gap: 80px;
+}
+
+.edit_container_phone {
+	display: flex;
+	align-items: center;
+	justify-content: flex-start;
+	gap: 46px;
+}
+
+.edit_container_address {
+	display: flex;
+	align-items: center;
+	justify-content: flex-start;
+	gap: 20px;
+}
+
+.edit_container_password {
+	display: flex;
+	align-items: center;
+	justify-content: flex-start;
+	gap: 20px;
+}
+
+.edit_container_confirmpass {
+	display: flex;
+	align-items: center;
+	justify-content: flex-start;
+	gap: 42px;
+}
+
+.edit_content p, .edit_container_phone p, .edit_container_address p, .edit_container_confirmpass p, .edit_container_password p {
+	font-size: 18px;
+	font-family: "Roboto";
+	padding-top: 10px;
+	padding-bottom: 10px;
+}
+
+.edit_container input[type="text"], .edit_container input[type="password"], .edit_container_phone input[type="text"], .edit_container_confirmpass input[type="password"], .edit_container_password input[type="password"] {
+    width: 300px;
+    height: 15px;
+    padding: 10px;
+    border-radius: 5px;
+    border: 2px solid #ccc;
+    font-size: 18px;
+}
+
+.edit_container_address input[type="text"] {
+	width: 130px;
+	height: 15px;
+	padding: 10px;
+	border-radius: 5px;
+	border: 2px solid #ccc;
+	font-size: 18px;
+	margin-left: 46px;
+}
+
+.edit_container_address textarea {
+	width: 100%;
+	max-width: 150px;
+	height: 20px;
+	overflow-y: auto;
+	resize: vertical;
+	padding: 10px;
+	border-radius: 5px;
+	border: 2px solid #ccc;
+	font-size: 18px;
+}
+
+.radio_group {
+	padding: 20px;
+	display: flex;
+	gap: 10px;
+	align-items: center;
+}
+
+.radio_group label {
+	font-size: 18px;
+}
+
+.edit_container input[type="radio"] {
+	width: 20px;
+	margin-right: 2px;
+	font-size: 18px;
+}
+
+.address {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	gap: 15px;
+	align-items: center;
+}
+
+.edit_content .grey {
+	color: #9A9A9A;
+}
+
+.actions {
+	display: flex;
+	justify-content: left;
+	align-items: center;
+	width: 100%;
+	margin-top: 20px;
+	gap: 50px;
+}
+
+.actions .edit {
+	background-color: #65558f;
+	color: white;
+	padding: 10px 20px;
+	font-size: 20px;
+	font-family: 'Roboto', sans-serif;
+	cursor: pointer;
+	transition: all 0.5s ease;
+	border: none;
+	border-radius: 30px;
+	width: 100px;
+}
+
+.actions .edit:hover {
+	background-color: rgb(95, 95, 194);
+	color: white;
+	transform: scale(1.05);
+}
+
+.actions .cancel {
+	background-color: #ccc;
+	color: black;
+	padding: 10px 20px;
+	font-size: 20px;
+	font-family: 'Roboto', sans-serif;
+	cursor: pointer;
+	transition: all 0.5s ease;
+	border: none;
+	border-radius: 30px;
+	margin-bottom: 28px;
+}
+
+.actions .cancel:hover {
+	transform: scale(1.05);
+}
