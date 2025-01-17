@@ -1,0 +1,27 @@
+/* Status Dropdown and Update Button */
+table select {
+    width: 100%;
+    padding: 6px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    margin-bottom: 5px;
+}
+
+table button[type="submit"] {
+    width: 100%;
+    padding: 6px;
+    background-color: #2196F3;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+table button[type="submit"]:hover {
+    background-color: #1E88E5;
+}
+
+table td:last-child {
+    min-width: 100px; /* Ensures enough space for the form */
+}
